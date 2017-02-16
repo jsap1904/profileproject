@@ -74,3 +74,15 @@ results.textContent= "you forgot to add your email"
 return
 
 }
+
+/*
+PHONE NUMBER
+*/
+if (userNumber == "" ) {
+	//add class of failure to the resilts if no user phone number
+results.className = "failure"	
+//update the text content of results
+results.textContent = "you forgot to add your phone number"
+//stop function if no answer
+return
+}
