@@ -61,5 +61,16 @@ if (userGender == undefined) {
 	return
 
 }
+/*
+EMAIL
+*/
+if (userEmail == "") {
+	//add a class of failure to the results if no user email value
 
+results.className = "failure"
+//update the text content of results
+results.textContent= "you forgot to add your email"
+//stop function if no answer
+return
 
+}
