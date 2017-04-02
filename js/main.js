@@ -39,3 +39,27 @@ if (userLast == "") {
 	//stop function if no answer
 	return
 }
+/*
+GENDER
+*/
+//loop through all elements with class="userGender"
+for(var i=0;i < userGenderEls.length;i++) {
+	//if the radio was selected by the user, do this
+	if(userGenderels[i].checked) {
+		//sets value of answer 3 to the vaue in the radio item
+		userGender = userGenderEls[i].value
+		console.log(userGender)
+	}
+}
+//stop function if no data is there for gender
+if (userGender == undefined) {
+	//add a class of faulre to results if no user gender value
+	results.className= "failure"
+	//update the text content of results
+	results.textContent = "you forgot to select a gender"
+	// stop function if no answer
+	return
+
+}
+
+
