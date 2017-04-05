@@ -28,3 +28,14 @@ function getUserData() {
 			//stop function if no answer
 			return
 	}
+/* 
+LAST NAME
+*/
+if (userLast == "") {
+	//add class of failure to results if no user last name value
+	results.className="failure"
+	//update the text content of results
+	results.textContent = "you forgot to add your last name"
+	//stop function if no answer
+	return
+}
