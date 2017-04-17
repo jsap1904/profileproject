@@ -86,3 +86,26 @@ results.textContent = "you forgot to add your phone number"
 //stop function if no answer
 return
 }
+
+/*
+Favorite Beer
+*/
+//loop through all elements with class="userBeer"
+for (var i =0; i < userBeerEls.length; i++) {
+	//check which was selected by the user, do this
+	if(userColorEls[i].selected) {
+		//set value of answer 2 to the value in the selected item
+		userBeer = userBeerEls.[i].value
+	}
+
+}
+//stop function if no data for question 2
+if (userBeer == "") {
+	//add a class of failure to results if no user beer value
+	results.className = "failure"
+	//update the text content of results
+	results.textContent = "you forgot to select your favorite Beer"
+	//stop function if no answer
+	return
+	
+}
